@@ -34,7 +34,7 @@ BETRMINT is a Base-native mint–spin–win protocol backed by the **$BETR** tok
 | Write (stake, claim, mint, win) | Harness HTTP tool → GET prepare URL → `send_calls` |
 | Explain / summarize | Same read paths as above |
 
-All prepare endpoints are GET with query parameters.
+All prepare endpoints are GET with query parameters. On chat-only surfaces (Claude.ai, ChatGPT), `web_request` fallback applies — see Base MCP plugin documentation.
 
 ## Endpoints
 
