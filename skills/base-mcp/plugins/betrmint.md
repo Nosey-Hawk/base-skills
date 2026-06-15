@@ -34,7 +34,7 @@ BETRMINT is a Base-native mint–spin–win protocol backed by the **$BETR** tok
 | Write (stake, claim, mint, win) | Harness HTTP tool → GET prepare URL → `send_calls` |
 | Explain / summarize | Same read paths as above |
 
-All prepare endpoints are GET with query parameters. On chat-only surfaces (Claude.ai, ChatGPT), `web_request` GET applies; for the full harness HTTP → `web_request` → user-paste decision tree see [custom-plugins.md](custom-plugins.md).
+All prepare endpoints are GET with query parameters. For chat-only surface behavior, see [custom-plugins.md](custom-plugins.md).
 
 ## Endpoints
 
@@ -187,7 +187,7 @@ Target tool: **`send_calls`**. Map every `transactions[*]` item from a prepare r
 - `value` defaults to `0x0` if omitted.
 - Execute the full batch in one approval — steps are ordered (`approve` before the protocol action).
 - Map `chainId: 8453` to `chain: "base"`.
-- After `send_calls`, present the approval URL and poll `get_request_status(requestId)` until confirmed. See [approval-mode.md](approval-mode.md).
+- After `send_calls`, present the approval URL and poll `get_request_status(requestId)` until confirmed.
 
 ## Example Prompts
 
