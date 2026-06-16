@@ -187,7 +187,7 @@ Target tool: **`send_calls`**. Map every `transactions[*]` item from a prepare r
 - `value` defaults to `0x0` if omitted.
 - Execute the full batch in one approval — steps are ordered (`approve` before the protocol action).
 - Map `chainId: 8453` to `chain: "base"`.
-- After `send_calls`, present the approval URL and poll `get_request_status(requestId)` until confirmed.
+- After `send_calls`, present the approval URL and poll `get_request_status(requestId)` until confirmed. See approval-mode.md.
 
 ## Example Prompts
 
